@@ -11,27 +11,29 @@
 			case 40: alert("down"); break; //down arrow
 		}
 	};
+	var regex = new RegExp('\/([a-z]*).mpo$');
 	var active = function(ev) {
 		var link = this.href;
 		var top = document.querySelector("#top");
-		if(link.indexOf('one') > -1){
-			top.className = 'one';
-		}else if(link.indexOf('two') > -1) {
-			top.className = 'two';
-		}else if(link.indexOf('three') > -1) {
-			top.className = 'three';
-		}else if(link.indexOf('four') > -1) {
-			top.className = 'four';
+		var result = regex.exec(link);
+		if(result.length>1){
+			top.className = result[1];
 		}
-	}
+	};
+	
+	var inactive = function(ev) {
+		var top = document.querySelector("#top");
+		top.className = '';
+	};
 
 	document.addEventListener('DOMContentLoaded', function(ev){
 		setInterval(center, 42);
-		//this.addEventListener("keyup", control, false);
 		var anchors = this.querySelectorAll("#bottom a[href$='.mpo']");
 		for(var i = 0, l = anchors.length; i<l; i++){
 			anchors[i].addEventListener('focus', active, false);
+			anchors[i].addEventListener('blur', inactive, false);
 		}
-		this.querySelector("#bottom a[href*='one']").focus();
 	}, false);
 })()
+
+// 
