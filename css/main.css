@@ -1,0 +1,47 @@
+body, html {
+	margin: 0;
+	background: black;
+}
+body > div {
+	overflow: hidden;
+}
+#top {
+	width: 400px;
+	height: 220px;
+}
+#bottom {
+	width: 320px;
+	height: 212px;
+	margin: 0 auto;
+}
+#top.one {
+	background: url(../img/one.mpo);
+}
+#top.two {
+	background: url(../img/two.mpo);
+}
+#top.three {
+	background: url(../img/three.mpo);
+}
+#top.four {
+	background: url(../img/four.mpo);
+}
+#bottom > a {
+	margin: 10px;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	background-size: 100% 100%;
+}
+#bottom > a[href*="one"] {
+	background: url(../img/one.mpo);
+}
+#bottom > a[href*="two"] {
+	background: url(../img/two.mpo);
+}
+#bottom > a[href*="three"] {
+	background: url(../img/three.mpo);
+}
+#bottom > a[href*="four"] {
+	background: url(../img/four.mpo);
+}
