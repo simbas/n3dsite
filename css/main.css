@@ -4,16 +4,15 @@ body, html {
 }
 body > div {
 	overflow: hidden;
+	margin: 0 auto;
 }
 #top {
 	width: 400px;
 	height: 220px;
-	background: url(../img/zero.png);
 }
 #bottom {
 	width: 320px;
 	height: 212px;
-	margin: 0 auto;
 }
 #bottom > a {
 	margin: 8px 12px;
@@ -21,40 +20,4 @@ body > div {
 	height: 50px;
 	width: 50px;
 	background-size: 100% 100%;
-}
-#top.one, #bottom > a[href*="one"] {
-	background: url(../img/one.mpo);
-}
-#top.two, #bottom > a[href*="two"] {
-	background: url(../img/two.mpo);
-}
-#top.three, #bottom > a[href*="three"] {
-	background: url(../img/three.mpo);
-}
-#top.four, #bottom > a[href*="four"] {
-	background: url(../img/four.mpo);
-}
-#top.five, #bottom > a[href*="five"] {
-	background: url(../img/five.mpo);
-}
-#top.six, #bottom > a[href*="six"] {
-	background: url(../img/six.mpo);
-}
-#top.seven, #bottom > a[href*="seven"] {
-	background: url(../img/seven.mpo);
-}
-#top.eight, #bottom > a[href*="eight"] {
-	background: url(../img/eight.mpo);
-}
-#top.nine, #bottom > a[href*="nine"] {
-	background: url(../img/nine.mpo);
-}
-#top.ten, #bottom > a[href*="ten"] {
-	background: url(../img/ten.mpo);
-}
-#top.eleven, #bottom > a[href*="eleven"] {
-	background: url(../img/eleven.mpo);
-}
-#top.twelve, #bottom > a[href*="twelve"] {
-	background: url(../img/twelve.mpo);
 }

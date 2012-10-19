@@ -25,8 +25,7 @@ Optimized website for nintendo 3DS
 
 #### More
 
-The background image is changed via setting class on top screen div but the background image property can be changed via JavaScript.
-
+Maybe will be avaible as a library/boilterplate to reuse to make 3DS gallery sites.
 ----
 
 #### Credits
